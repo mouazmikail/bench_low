@@ -2,10 +2,11 @@
 
 Dépôt de **résultats** du protocole Low-Eval (chapitres 3 et 4 du manuscrit
 « Frugal Multimodal Alignment », M. Mikail, CY Cergy Paris Université).
-Il ne contient aucun code : les mesures sont produites par le
+Les mesures sont produites par le
 [Low-Eval Kit](../Low-Eval-Kit) à partir du corpus
 [Data-Low](../Data-Low), puis publiées ici après passage de la checklist
-d'intégrité (MANIFEST.md).
+d'intégrité (MANIFEST.md). Un unique script autonome permet à tout lecteur
+de vérifier les chiffres sans rien installer (bibliothèque standard seule).
 
 ## Contenu
 
@@ -14,8 +15,22 @@ results/
   reference_results.csv   Référentiel verrouillé — tableau 4.1 (6 modèles)
   scores_composites.csv   Scores consolidés (ECC et S recalculés, exports)
   pareto.json             Front de Pareto CA/UP/ECC + matrice de dominance
+scripts/
+  recalculer_scores.py    Recalcul autonome (stdlib) + vérification des verrous
 MANIFEST.md               Manifeste d'intégrité des résultats
+LICENSE                   CC BY-NC 4.0
 ```
+
+## Vérifier les chiffres publiés
+
+```bash
+python3 scripts/recalculer_scores.py
+```
+
+Le script recalcule ECC et S depuis les formules du §3.1, reconstruit le
+front de Pareto par dominance, et refuse toute divergence avec les valeurs
+verrouillées (ECC = 0,876 et S = 0,787 pour Qwen2-VL-7B ; front à trois
+modèles) avant de réécrire les exports.
 
 ## Lecture des fichiers
 

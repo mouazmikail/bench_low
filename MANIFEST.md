@@ -11,8 +11,8 @@ d'intégrité ci-dessous.
 
 | Fichier | Commande productrice | Verrou |
 |---|---|---|
-| `results/scores_composites.csv` | `python scripts/compute_scores.py --input results/reference_results.csv` | ECC/S recalculés |
-| `results/pareto.json` | idem (export `--pareto`) | front exact testé (`tests/test_pareto.py`) |
+| `results/scores_composites.csv` | `python3 scripts/recalculer_scores.py` (dépôt) ou `compute_scores.py` (kit) | ECC/S recalculés |
+| `results/pareto.json` | `python3 scripts/recalculer_scores.py` | front exact vérifié par assertion |
 | `results/reference_results.csv` | campagne du tableau 4.1 | saisie figée — ne jamais modifier |
 
 ## 3. Checklist d'intégrité avant publication

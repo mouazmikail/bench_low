@@ -15,14 +15,14 @@
       "Statut": "Non dominé",
       "CA": 0.82,
       "UP": 0.71,
-      "ECC": 0.876
+      "ECC": 0.8757741935483871
     },
     {
       "Modèle": "InternVL-8B",
       "Statut": "Dominé par Qwen2-VL-7B",
       "CA": 0.79,
       "UP": 0.67,
-      "ECC": 0.868
+      "ECC": 0.8675483870967742
     },
     {
       "Modèle": "LLaVA-1.5-7B",
@@ -36,21 +36,21 @@
       "Statut": "Non dominé",
       "CA": 0.62,
       "UP": 0.58,
-      "ECC": 0.953
+      "ECC": 0.9530967741935483
     },
     {
       "Modèle": "Gemma-7B",
       "Statut": "Dominé par MiniCPM-V-2.8B",
       "CA": 0.61,
       "UP": 0.56,
-      "ECC": 0.901
+      "ECC": 0.9007741935483871
     },
     {
       "Modèle": "Mistral-7B",
       "Statut": "Dominé par MiniCPM-V-2.8B",
       "CA": 0.59,
       "UP": 0.54,
-      "ECC": 0.904
+      "ECC": 0.9038870967741935
     }
   ]
 }
