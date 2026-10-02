@@ -1,0 +1,56 @@
+{
+  "objectifs": [
+    "ca",
+    "up",
+    "ecc"
+  ],
+  "non_domines": [
+    "Qwen2-VL-7B",
+    "LLaVA-1.5-7B",
+    "MiniCPM-V-2.8B"
+  ],
+  "matrice_dominance": [
+    {
+      "Modèle": "Qwen2-VL-7B",
+      "Statut": "Non dominé",
+      "CA": 0.82,
+      "UP": 0.71,
+      "ECC": 0.876
+    },
+    {
+      "Modèle": "InternVL-8B",
+      "Statut": "Dominé par Qwen2-VL-7B",
+      "CA": 0.79,
+      "UP": 0.67,
+      "ECC": 0.868
+    },
+    {
+      "Modèle": "LLaVA-1.5-7B",
+      "Statut": "Non dominé",
+      "CA": 0.78,
+      "UP": 0.65,
+      "ECC": 0.888
+    },
+    {
+      "Modèle": "MiniCPM-V-2.8B",
+      "Statut": "Non dominé",
+      "CA": 0.62,
+      "UP": 0.58,
+      "ECC": 0.953
+    },
+    {
+      "Modèle": "Gemma-7B",
+      "Statut": "Dominé par MiniCPM-V-2.8B",
+      "CA": 0.61,
+      "UP": 0.56,
+      "ECC": 0.901
+    },
+    {
+      "Modèle": "Mistral-7B",
+      "Statut": "Dominé par MiniCPM-V-2.8B",
+      "CA": 0.59,
+      "UP": 0.54,
+      "ECC": 0.904
+    }
+  ]
+}
